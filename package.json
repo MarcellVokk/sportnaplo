@@ -12,8 +12,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start & git add . & git commit -m 'Automatic commit' & git push -u origin main",
-    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "git": "git add . & git commit -m $uniqueMessageFromTheCommandLine` & git push -u origin main",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
