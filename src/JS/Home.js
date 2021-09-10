@@ -1,6 +1,7 @@
 import '../CSS/Test.css';
 import { useHistory } from 'react-router-dom';
 import React, {useState} from 'react'
+import send from './SNServer'
 
 export default () => {
     const [data, setData] = useState(null);
@@ -10,8 +11,6 @@ export default () => {
     }
     
     const history = useHistory();
-    var wsUri = "ws://sportnaplo.herokuapp.com/";
-    var websocket;
 
     return (
         <div className="test">
@@ -20,16 +19,4 @@ export default () => {
             <button onClick={() => send(data)}>send</button>
         </div>
     );
-
-    function send(message) {
-        websocket = new WebSocket(wsUri);
-
-        websocket.onopen = function (e) {
-            websocket.send(message);
-        };
-
-        websocket.onerror = function (e) {
-            console.log("ERROR: " + e.data);
-        };
-    }
 }

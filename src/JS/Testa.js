@@ -5,7 +5,7 @@ export default () => {
     const history = useHistory();
 
     return (
-        <div class="test">
+        <div className="test">
             <button onClick={() => history.push('/')}>Home</button>
             <button onClick={() => history.push('/test')}>Back to Test</button>
         </div>
