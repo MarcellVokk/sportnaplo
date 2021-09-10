@@ -14,7 +14,7 @@ export default () => {
 
     return (
         <div className="test">
-            <a>Hello 1</a>
+            <a>Hello 2</a>
             <button onClick={() => history.push('/test')}>Test</button>
             <input type="text" onChange={getData}></input>
             <button onClick={() => send(data)}>send</button>
