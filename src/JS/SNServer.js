@@ -1,10 +1,11 @@
-var wsUri = "ws://sportnaplo.herokuapp.com/";
+var wsUri = "ws://193.110.61.31:81/snnetworking";
 var websocket;
 
 function send(message) {
     websocket = new WebSocket(wsUri);
 
     websocket.onopen = function (e) {
+        console.log("a");
         websocket.send(message);
     };
 
