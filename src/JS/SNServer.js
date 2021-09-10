@@ -1,4 +1,4 @@
-var wsUri = "ws://193.110.61.31:81/snnetworking";
+var wsUri = "wss://193.110.61.31:81/snnetworking";
 var websocket;
 
 function send(message) {
