@@ -1,6 +1,6 @@
 import Home from './Home'
-import Test from './Test'
-import Testa from './Testa'
+import Login from './Login'
+import Register from './Register'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -11,11 +11,11 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/test">
-            <Test />
+          <Route exact path="/login">
+            <Login />
           </Route>
-          <Route exact path="/test/a">
-            <Testa />
+          <Route exact path="/register">
+            <Register />
           </Route>
         </Switch>
       </div>
